@@ -92,5 +92,7 @@ public class R3Vector {
         return (double)((int)(a * 100)) / 100;
 
     }
-
+    public R3Vector normal(){
+        return R3Vector.vector( new R3Vector(vertex[1].GetX() - vertex[0].GetX(), vertex[1].GetY() - vertex[0].GetY(), vertex[1].GetZ() - vertex[0].GetZ()), new R3Vector(vertex[2].GetX() - vertex[1].GetX(), vertex[2].GetY() - vertex[1].GetY(), vertex[2].GetZ() - vertex[1].GetZ()));
+    }
 }

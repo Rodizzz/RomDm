@@ -123,4 +123,5 @@ public class Facet {
         g.setColor(new Color(255, 100, 255));
         g.drawLine((int) vertex[3].x, (int) vertex[3].y, (int) vertex[0].x, (int) vertex[0].y);
     }
+
 }
